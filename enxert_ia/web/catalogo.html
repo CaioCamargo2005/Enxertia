@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo Enxert.DB -- Enxert.IA</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">Enxert<span>.IA</span></a>
+  <nav class="topnav">
+    <a href="compatibilidade.html">Consultar</a>
+    <a href="recomendar.html">Recomendar</a>
+    <a href="plantas.html">Plantas</a>
+    <a href="banco.html">Banco</a>
+    <a href="catalogo.html" aria-current="page">Catálogo</a>
+    <a href="/docs">API</a>
+  </nav>
+</header>
+
+<main class="page page--wide">
+  <p class="eyebrow">Enxert.DB</p>
+  <h1>Catálogo de combinações</h1>
+  <p class="subtitle">As combinações registradas no Enxert.DB, com taxa de pegamento, método e de onde veio cada uma: registros da equipe ou estudos abertos. Os registros da literatura aparecem como "a conferir" até alguém da equipe achar o trecho no PDF.</p>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="filtros filtros--3">
+    <div class="field">
+      <label for="busca">Buscar planta, observação ou fonte</label>
+      <input class="picker__input" id="busca" type="search" autocomplete="off" placeholder="ex: laranjeira, Swingle, melancia, Embrapa...">
+    </div>
+    <div class="field">
+      <label for="filtro-status">Status</label>
+      <select class="picker__input" id="filtro-status">
+        <option value="">Todos</option>
+        <option>Compatível</option>
+        <option>Incompatibilidade Localizada</option>
+        <option>Incompatibilidade Translocada</option>
+        <option>Incompatível</option>
+        <option value="sem_status">Não classificado pela fonte</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="filtro-origem">Origem</label>
+      <select class="picker__input" id="filtro-origem">
+        <option value="">Todas</option>
+        <option value="equipe">Registros da equipe</option>
+        <option value="literatura">Literatura</option>
+        <option value="a_conferir">Literatura a conferir</option>
+      </select>
+    </div>
+  </div>
+
+  <p class="hint" id="contagem"></p>
+  <div class="error-msg" id="erro" hidden></div>
+  <div class="cat-grid" id="lista"></div>
+
+  <p class="hint nota-rodape">Cadastros e correções continuam pelo menu do Enxert.DB (<code>python interface_enxert_db.py</code>, na pasta <code>enxert_db</code>). Esta página só lê o banco.</p>
+</main>
+
+<script src="catalogo.js"></script>
+</body>
+</html>

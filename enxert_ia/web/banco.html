@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banco de combinacoes -- Enxert.IA</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">Enxert<span>.IA</span></a>
+  <nav class="topnav">
+    <a href="compatibilidade.html">Consultar</a>
+    <a href="recomendar.html">Recomendar</a>
+    <a href="plantas.html">Plantas</a>
+    <a href="banco.html" aria-current="page">Banco</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="/docs">API</a>
+  </nav>
+</header>
+
+<main class="page page--wide">
+  <p class="eyebrow">Dados</p>
+  <h1>Banco de combinacoes</h1>
+  <p class="subtitle">Registros conhecidos de compatibilidade. Quando um par esta aqui, ele tem prioridade sobre qualquer estimativa. Cada registro mostra o tipo de evidencia: <strong>citada</strong> (tem fonte), <strong>conhecimento geral</strong> (sem citacao formal) ou <strong>relato nao verificado</strong>.</p>
+
+  <div class="filtros">
+    <div class="field">
+      <label for="busca">Buscar (especie, fonte ou observacao)</label>
+      <input class="picker__input" id="busca" type="search" autocomplete="off" placeholder="ex: Prunus, Solanum, Swingle, Embrapa...">
+    </div>
+    <div class="field">
+      <label for="filtro-cultura">Cultura (literatura)</label>
+      <select class="picker__input" id="filtro-cultura">
+        <option value="">Todas</option>
+        <option>Citros</option>
+        <option>Solanáceas</option>
+        <option>Pera (Pyrus)</option>
+        <option>Cucurbitáceas</option>
+      </select>
+    </div>
+  </div>
+  <h2>Combinacoes registradas</h2>
+  <p class="hint" id="contagem"></p>
+  <div class="tabela-wrap" id="tabela-area"></div>
+
+  <h2 class="secao">Evidencias da literatura</h2>
+  <p class="subtitle">Registros extraidos de artigos e boletins abertos, cada um com a fonte e o link. Eles sao contexto e nao mudam o score. A coluna <strong>Conferido</strong> diz se alguem da equipe ja achou o trecho no PDF; a edicao e feita na coluna <code>conferido</code> de <code>data/literatura_enxertia.csv</code>. A busca acima tambem filtra esta tabela.</p>
+  <p class="hint" id="contagem-lit"></p>
+  <div class="tabela-wrap" id="tabela-lit"></div>
+
+  <div class="card card--form">
+    <h2>Cadastrar combinacao</h2>
+    <div class="field"><label for="f-porta">Porta-enxerto (nome cientifico)</label>
+      <input class="picker__input" id="f-porta" type="text" placeholder="ex: Solanum melongena"></div>
+    <div class="field"><label for="f-enxerto">Enxerto / copa (nome cientifico)</label>
+      <input class="picker__input" id="f-enxerto" type="text" placeholder="ex: Solanum lycopersicum"></div>
+    <div class="field"><label for="f-resultado">Resultado observado</label>
+      <select class="picker__input" id="f-resultado">
+        <option value="0.9">Compativel (alta)</option>
+        <option value="0.7">Provavelmente compativel</option>
+        <option value="0.4">Incerto / compatibilidade parcial</option>
+        <option value="0.1">Incompativel</option>
+      </select></div>
+    <div class="field"><label for="f-evidencia">Tipo de evidencia</label>
+      <select class="picker__input" id="f-evidencia">
+        <option value="citada">Citada (artigo, manual, livro) -- exige fonte</option>
+        <option value="conhecimento_geral">Conhecimento geral, sem citacao</option>
+        <option value="relato_nao_verificado">Relato nao verificado</option>
+      </select></div>
+    <div class="field"><label for="f-fonte">Fonte</label>
+      <input class="picker__input" id="f-fonte" type="text" placeholder="ex: Sobrenome et al. (2020). Titulo. Revista. DOI/URL"></div>
+    <div class="field"><label for="f-obs">Observacoes (opcional)</label>
+      <textarea class="picker__input" id="f-obs" rows="2"></textarea></div>
+    <button class="btn" id="btn-salvar">Salvar registro</button>
+    <div class="error-msg" id="msg-erro" hidden></div>
+    <p class="hint" id="msg-ok" hidden></p>
+  </div>
+</main>
+<script src="banco.js"></script>
+</body>
+</html>

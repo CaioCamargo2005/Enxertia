@@ -1,0 +1,50 @@
+{
+  "treinado_em": "2026-11-13",
+  "n_amostras": 140,
+  "mae_validacao_cruzada_5fold": 0.037,
+  "mae_desvio_padrao_entre_folds": 0.003,
+  "classificacao_por_nivel_fora_da_amostra": {
+    "alta": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "n": 6
+    },
+    "improvavel": {
+      "precision": 1.0,
+      "recall": 0.92,
+      "f1": 0.96,
+      "n": 13
+    },
+    "incerta": {
+      "precision": 0.94,
+      "recall": 0.93,
+      "f1": 0.93,
+      "n": 81
+    },
+    "provavel": {
+      "precision": 0.79,
+      "recall": 0.95,
+      "f1": 0.86,
+      "n": 40
+    }
+  },
+  "recall_macro": 0.7,
+  "precision_macro": 0.68,
+  "f1_macro": 0.69,
+  "combinacoes_unicas_de_features": 67,
+  "proporcao_de_linhas_duplicadas_em_features": 0.52,
+  "features_categoricas": [
+    "rootstock_genus",
+    "scion_genus",
+    "rootstock_family",
+    "scion_family"
+  ],
+  "features_numericas": [
+    "same_species",
+    "same_genus",
+    "same_family"
+  ],
+  "origem_dataset": "seed dataset curado a mao a partir de conhecimento horticola geral (ver data/build_seed_dataset.py) -- NAO e literatura minerada sistematicamente.",
+  "aviso_mae": "67 combinacoes unicas de generos/familias entre 140 linhas (52% das linhas compartilham features com outra linha) -- o MAE e as metricas de classificacao acima sao otimistas por causa dessa duplicacao, nao medem generalizacao real para pares de especies nunca vistos. recall/precision/f1 foram calculados fora-da-amostra (cross_val_predict), nao sobre o treino, mas o viés de duplicacao de features entre folds continua valendo."
+}

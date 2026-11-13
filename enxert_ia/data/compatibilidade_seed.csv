@@ -1,0 +1,141 @@
+rootstock,scion,rootstock_genus,scion_genus,rootstock_family,scion_family,score,level,nota
+Citrus sinensis,Citrus limon,Citrus,Citrus,Rutaceae,Rutaceae,0.75,provavel,regra geral: mesmo genero
+Citrus sinensis,Citrus reticulata,Citrus,Citrus,Rutaceae,Rutaceae,0.75,provavel,regra geral: mesmo genero
+Citrus sinensis,Citrus aurantium,Citrus,Citrus,Rutaceae,Rutaceae,0.75,provavel,regra geral: mesmo genero
+Citrus sinensis,Citrus aurantiifolia,Citrus,Citrus,Rutaceae,Rutaceae,0.75,provavel,regra geral: mesmo genero
+Citrus sinensis,Citrus paradisi,Citrus,Citrus,Rutaceae,Rutaceae,0.75,provavel,regra geral: mesmo genero
+Citrus sinensis,Poncirus trifoliata,Citrus,Poncirus,Rutaceae,Rutaceae,0.88,alta,"excecao: Poncirus trifoliata e o porta-enxerto mais usado no mundo para citros, apesar de generos diferentes"
+Citrus sinensis,Fortunella margarita,Citrus,Fortunella,Rutaceae,Rutaceae,0.55,provavel,"excecao: kunquate tem compatibilidade razoavel com citros, acima da media de mesma familia"
+Citrus limon,Citrus reticulata,Citrus,Citrus,Rutaceae,Rutaceae,0.75,provavel,regra geral: mesmo genero
+Citrus limon,Citrus aurantium,Citrus,Citrus,Rutaceae,Rutaceae,0.75,provavel,regra geral: mesmo genero
+Citrus limon,Citrus aurantiifolia,Citrus,Citrus,Rutaceae,Rutaceae,0.75,provavel,regra geral: mesmo genero
+Citrus limon,Citrus paradisi,Citrus,Citrus,Rutaceae,Rutaceae,0.75,provavel,regra geral: mesmo genero
+Citrus limon,Poncirus trifoliata,Citrus,Poncirus,Rutaceae,Rutaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Citrus limon,Fortunella margarita,Citrus,Fortunella,Rutaceae,Rutaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Citrus reticulata,Citrus aurantium,Citrus,Citrus,Rutaceae,Rutaceae,0.75,provavel,regra geral: mesmo genero
+Citrus reticulata,Citrus aurantiifolia,Citrus,Citrus,Rutaceae,Rutaceae,0.75,provavel,regra geral: mesmo genero
+Citrus reticulata,Citrus paradisi,Citrus,Citrus,Rutaceae,Rutaceae,0.75,provavel,regra geral: mesmo genero
+Citrus reticulata,Poncirus trifoliata,Citrus,Poncirus,Rutaceae,Rutaceae,0.8,alta,excecao: trifolio tambem e porta-enxerto consolidado para tangerinas
+Citrus reticulata,Fortunella margarita,Citrus,Fortunella,Rutaceae,Rutaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Citrus aurantium,Citrus aurantiifolia,Citrus,Citrus,Rutaceae,Rutaceae,0.75,provavel,regra geral: mesmo genero
+Citrus aurantium,Citrus paradisi,Citrus,Citrus,Rutaceae,Rutaceae,0.75,provavel,regra geral: mesmo genero
+Citrus aurantium,Poncirus trifoliata,Citrus,Poncirus,Rutaceae,Rutaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Citrus aurantium,Fortunella margarita,Citrus,Fortunella,Rutaceae,Rutaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Citrus aurantiifolia,Citrus paradisi,Citrus,Citrus,Rutaceae,Rutaceae,0.75,provavel,regra geral: mesmo genero
+Citrus aurantiifolia,Poncirus trifoliata,Citrus,Poncirus,Rutaceae,Rutaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Citrus aurantiifolia,Fortunella margarita,Citrus,Fortunella,Rutaceae,Rutaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Citrus paradisi,Poncirus trifoliata,Citrus,Poncirus,Rutaceae,Rutaceae,0.65,provavel,"excecao: combinacao usada comercialmente, mas com mais restricao de solo que laranja/trifolio"
+Citrus paradisi,Fortunella margarita,Citrus,Fortunella,Rutaceae,Rutaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Poncirus trifoliata,Fortunella margarita,Poncirus,Fortunella,Rutaceae,Rutaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Malus domestica,Pyrus communis,Malus,Pyrus,Rosaceae,Rosaceae,0.1,improvavel,excecao: maca e pera raramente sao compativeis na pratica apesar de serem Rosaceae
+Malus domestica,Prunus persica,Malus,Prunus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Malus domestica,Prunus armeniaca,Malus,Prunus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Malus domestica,Prunus domestica,Malus,Prunus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Malus domestica,Prunus salicina,Malus,Prunus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Malus domestica,Prunus avium,Malus,Prunus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Malus domestica,Prunus dulcis,Malus,Prunus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Malus domestica,Fragaria x ananassa,Malus,Fragaria,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Malus domestica,Rubus idaeus,Malus,Rubus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Malus domestica,Eriobotrya japonica,Malus,Eriobotrya,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Pyrus communis,Prunus persica,Pyrus,Prunus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Pyrus communis,Prunus armeniaca,Pyrus,Prunus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Pyrus communis,Prunus domestica,Pyrus,Prunus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Pyrus communis,Prunus salicina,Pyrus,Prunus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Pyrus communis,Prunus avium,Pyrus,Prunus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Pyrus communis,Prunus dulcis,Pyrus,Prunus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Pyrus communis,Fragaria x ananassa,Pyrus,Fragaria,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Pyrus communis,Rubus idaeus,Pyrus,Rubus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Pyrus communis,Eriobotrya japonica,Pyrus,Eriobotrya,Rosaceae,Rosaceae,0.45,incerta,excecao: nespereira por vezes enxertada em marmeleiro/pereira com compatibilidade moderada documentada
+Prunus persica,Prunus armeniaca,Prunus,Prunus,Rosaceae,Rosaceae,0.75,provavel,regra geral: mesmo genero
+Prunus persica,Prunus domestica,Prunus,Prunus,Rosaceae,Rosaceae,0.75,provavel,regra geral: mesmo genero
+Prunus persica,Prunus salicina,Prunus,Prunus,Rosaceae,Rosaceae,0.75,provavel,regra geral: mesmo genero
+Prunus persica,Prunus avium,Prunus,Prunus,Rosaceae,Rosaceae,0.3,incerta,excecao: incompatibilidade tardia bem documentada entre pessego e cereja
+Prunus persica,Prunus dulcis,Prunus,Prunus,Rosaceae,Rosaceae,0.8,alta,excecao: pessego e amendoeira sao interférteis e tem alta compatibilidade de enxertia documentada
+Prunus persica,Fragaria x ananassa,Prunus,Fragaria,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus persica,Rubus idaeus,Prunus,Rubus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus persica,Eriobotrya japonica,Prunus,Eriobotrya,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus armeniaca,Prunus domestica,Prunus,Prunus,Rosaceae,Rosaceae,0.45,incerta,excecao: damasco sobre ameixeira tem incompatibilidade tardia frequente em manuais de fruticultura
+Prunus armeniaca,Prunus salicina,Prunus,Prunus,Rosaceae,Rosaceae,0.75,provavel,regra geral: mesmo genero
+Prunus armeniaca,Prunus avium,Prunus,Prunus,Rosaceae,Rosaceae,0.75,provavel,regra geral: mesmo genero
+Prunus armeniaca,Prunus dulcis,Prunus,Prunus,Rosaceae,Rosaceae,0.75,provavel,regra geral: mesmo genero
+Prunus armeniaca,Fragaria x ananassa,Prunus,Fragaria,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus armeniaca,Rubus idaeus,Prunus,Rubus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus armeniaca,Eriobotrya japonica,Prunus,Eriobotrya,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus domestica,Prunus salicina,Prunus,Prunus,Rosaceae,Rosaceae,0.75,provavel,regra geral: mesmo genero
+Prunus domestica,Prunus avium,Prunus,Prunus,Rosaceae,Rosaceae,0.75,provavel,regra geral: mesmo genero
+Prunus domestica,Prunus dulcis,Prunus,Prunus,Rosaceae,Rosaceae,0.75,provavel,regra geral: mesmo genero
+Prunus domestica,Fragaria x ananassa,Prunus,Fragaria,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus domestica,Rubus idaeus,Prunus,Rubus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus domestica,Eriobotrya japonica,Prunus,Eriobotrya,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus salicina,Prunus avium,Prunus,Prunus,Rosaceae,Rosaceae,0.75,provavel,regra geral: mesmo genero
+Prunus salicina,Prunus dulcis,Prunus,Prunus,Rosaceae,Rosaceae,0.75,provavel,regra geral: mesmo genero
+Prunus salicina,Fragaria x ananassa,Prunus,Fragaria,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus salicina,Rubus idaeus,Prunus,Rubus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus salicina,Eriobotrya japonica,Prunus,Eriobotrya,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus avium,Prunus dulcis,Prunus,Prunus,Rosaceae,Rosaceae,0.75,provavel,regra geral: mesmo genero
+Prunus avium,Fragaria x ananassa,Prunus,Fragaria,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus avium,Rubus idaeus,Prunus,Rubus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus avium,Eriobotrya japonica,Prunus,Eriobotrya,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus dulcis,Fragaria x ananassa,Prunus,Fragaria,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus dulcis,Rubus idaeus,Prunus,Rubus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Prunus dulcis,Eriobotrya japonica,Prunus,Eriobotrya,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Fragaria x ananassa,Rubus idaeus,Fragaria,Rubus,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Fragaria x ananassa,Eriobotrya japonica,Fragaria,Eriobotrya,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Rubus idaeus,Eriobotrya japonica,Rubus,Eriobotrya,Rosaceae,Rosaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Mangifera indica,Anacardium occidentale,Mangifera,Anacardium,Anacardiaceae,Anacardiaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Mangifera indica,Spondias mombin,Mangifera,Spondias,Anacardiaceae,Anacardiaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Mangifera indica,Spondias purpurea,Mangifera,Spondias,Anacardiaceae,Anacardiaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Anacardium occidentale,Spondias mombin,Anacardium,Spondias,Anacardiaceae,Anacardiaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Anacardium occidentale,Spondias purpurea,Anacardium,Spondias,Anacardiaceae,Anacardiaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Spondias mombin,Spondias purpurea,Spondias,Spondias,Anacardiaceae,Anacardiaceae,0.75,provavel,regra geral: mesmo genero
+Psidium guajava,Eugenia uniflora,Psidium,Eugenia,Myrtaceae,Myrtaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Psidium guajava,Plinia cauliflora,Psidium,Plinia,Myrtaceae,Myrtaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Psidium guajava,Syzygium jambos,Psidium,Syzygium,Myrtaceae,Myrtaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Psidium guajava,Eucalyptus grandis,Psidium,Eucalyptus,Myrtaceae,Myrtaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Eugenia uniflora,Plinia cauliflora,Eugenia,Plinia,Myrtaceae,Myrtaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Eugenia uniflora,Syzygium jambos,Eugenia,Syzygium,Myrtaceae,Myrtaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Eugenia uniflora,Eucalyptus grandis,Eugenia,Eucalyptus,Myrtaceae,Myrtaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Plinia cauliflora,Syzygium jambos,Plinia,Syzygium,Myrtaceae,Myrtaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Plinia cauliflora,Eucalyptus grandis,Plinia,Eucalyptus,Myrtaceae,Myrtaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Syzygium jambos,Eucalyptus grandis,Syzygium,Eucalyptus,Myrtaceae,Myrtaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Vitis vinifera,Vitis labrusca,Vitis,Vitis,Vitaceae,Vitaceae,0.9,alta,excecao: enxertia de vinifera sobre porta-enxertos americanos e pratica padrao mundial (resistencia a filoxera)
+Solanum lycopersicum,Solanum tuberosum,Solanum,Solanum,Solanaceae,Solanaceae,0.75,provavel,regra geral: mesmo genero
+Solanum lycopersicum,Solanum melongena,Solanum,Solanum,Solanaceae,Solanaceae,0.75,provavel,regra geral: mesmo genero
+Solanum lycopersicum,Capsicum annuum,Solanum,Capsicum,Solanaceae,Solanaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Solanum tuberosum,Solanum melongena,Solanum,Solanum,Solanaceae,Solanaceae,0.75,provavel,regra geral: mesmo genero
+Solanum tuberosum,Capsicum annuum,Solanum,Capsicum,Solanaceae,Solanaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Solanum melongena,Capsicum annuum,Solanum,Capsicum,Solanaceae,Solanaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Artocarpus heterophyllus,Morus nigra,Artocarpus,Morus,Moraceae,Moraceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Artocarpus heterophyllus,Ficus carica,Artocarpus,Ficus,Moraceae,Moraceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Morus nigra,Ficus carica,Morus,Ficus,Moraceae,Moraceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Coffea arabica,Coffea canephora,Coffea,Coffea,Rubiaceae,Rubiaceae,0.8,alta,excecao: enxertia de arabica sobre porta-enxerto robusta e pratica documentada para resistencia a nematoides
+Theobroma cacao,Theobroma grandiflorum,Theobroma,Theobroma,Malvaceae,Malvaceae,0.35,incerta,excecao: ensaios de enxertia cacau/cupuacu no Brasil mostram compatibilidade inconsistente apesar do mesmo genero
+Passiflora edulis,Passiflora alata,Passiflora,Passiflora,Passifloraceae,Passifloraceae,0.78,provavel,excecao: maracuja-azedo sobre porta-enxertos de Passiflora silvestres e pratica para resistencia a doencas de solo
+Passiflora edulis,Passiflora nitida,Passiflora,Passiflora,Passifloraceae,Passifloraceae,0.75,provavel,excecao: mesma logica do par acima -- porta-enxerto silvestre buscando tolerancia a fusariose
+Passiflora alata,Passiflora nitida,Passiflora,Passiflora,Passifloraceae,Passifloraceae,0.75,provavel,regra geral: mesmo genero
+Diospyros kaki,Diospyros virginiana,Diospyros,Diospyros,Ebenaceae,Ebenaceae,0.82,alta,excecao: caqui japones sobre porta-enxertos Diospyros americanos e pratica consolidada
+Averrhoa carambola,Averrhoa bilimbi,Averrhoa,Averrhoa,Oxalidaceae,Oxalidaceae,0.75,provavel,regra geral: mesmo genero
+Annona muricata,Annona squamosa,Annona,Annona,Annonaceae,Annonaceae,0.75,provavel,regra geral: mesmo genero
+Cucurbita moschata,Citrullus lanatus,Cucurbita,Citrullus,Cucurbitaceae,Cucurbitaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Cucurbita moschata,Cucumis melo,Cucurbita,Cucumis,Cucurbitaceae,Cucurbitaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Cucurbita moschata,Cucumis sativus,Cucurbita,Cucumis,Cucurbitaceae,Cucurbitaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Citrullus lanatus,Cucumis melo,Citrullus,Cucumis,Cucurbitaceae,Cucurbitaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Citrullus lanatus,Cucumis sativus,Citrullus,Cucumis,Cucurbitaceae,Cucurbitaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Cucumis melo,Cucumis sativus,Cucumis,Cucumis,Cucurbitaceae,Cucurbitaceae,0.75,provavel,regra geral: mesmo genero
+Paullinia cupana,Litchi chinensis,Paullinia,Litchi,Sapindaceae,Sapindaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Paullinia cupana,Nephelium lappaceum,Paullinia,Nephelium,Sapindaceae,Sapindaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Litchi chinensis,Nephelium lappaceum,Litchi,Nephelium,Sapindaceae,Sapindaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Euterpe oleracea,Cocos nucifera,Euterpe,Cocos,Arecaceae,Arecaceae,0.4,incerta,"regra geral: mesma familia, generos diferentes"
+Camellia sinensis,Camellia japonica,Camellia,Camellia,Theaceae,Theaceae,0.75,provavel,regra geral: mesmo genero
+Citrus sinensis,Coffea arabica,Citrus,Coffea,Rutaceae,Rubiaceae,0.05,improvavel,regra geral: familias diferentes
+Citrus sinensis,Theobroma cacao,Citrus,Theobroma,Rutaceae,Malvaceae,0.05,improvavel,regra geral: familias diferentes
+Malus domestica,Vitis vinifera,Malus,Vitis,Rosaceae,Vitaceae,0.05,improvavel,regra geral: familias diferentes
+Prunus persica,Mangifera indica,Prunus,Mangifera,Rosaceae,Anacardiaceae,0.05,improvavel,regra geral: familias diferentes
+Coffea arabica,Vitis vinifera,Coffea,Vitis,Rubiaceae,Vitaceae,0.05,improvavel,regra geral: familias diferentes
+Theobroma cacao,Passiflora edulis,Theobroma,Passiflora,Malvaceae,Passifloraceae,0.05,improvavel,regra geral: familias diferentes
+Persea americana,Citrus sinensis,Persea,Citrus,Lauraceae,Rutaceae,0.05,improvavel,regra geral: familias diferentes
+Olea europaea,Prunus persica,Olea,Prunus,Oleaceae,Rosaceae,0.05,improvavel,regra geral: familias diferentes
+Camellia sinensis,Coffea arabica,Camellia,Coffea,Theaceae,Rubiaceae,0.05,improvavel,regra geral: familias diferentes
+Punica granatum,Vitis vinifera,Punica,Vitis,Lythraceae,Vitaceae,0.05,improvavel,regra geral: familias diferentes
+Diospyros kaki,Malus domestica,Diospyros,Malus,Ebenaceae,Rosaceae,0.05,improvavel,regra geral: familias diferentes
+Solanum lycopersicum,Cucumis sativus,Solanum,Cucumis,Solanaceae,Cucurbitaceae,0.05,improvavel,regra geral: familias diferentes

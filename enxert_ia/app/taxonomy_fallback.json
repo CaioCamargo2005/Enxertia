@@ -1,0 +1,466 @@
+{
+  "_comment": "Dataset local de apoio, usado quando a API do Reflora nao responde. Cobre especies com relevancia real para enxertia (arvores frutiferas, videira, cafe, cacau, hortalicas solanaceas/cucurbitaceas comumente enxertadas). Culturas propagadas por semente/rizoma/estaca (milho, soja, arroz, feijao, mandioca, cana, banana, abacaxi, mamao, algodao) foram deixadas de fora de proposito, pois nao se enxertam na pratica. Nao substitui a base oficial. Em 13/11/2026 entraram 10 especies citadas nos estudos da literatura (data/literatura_fontes.csv), para que os pares do banco de combinacoes possam ser consultados sem internet; o modelo de ML nao foi retreinado com elas.",
+  "species": [
+    {
+      "scientific_name": "Citrus sinensis",
+      "common_name": "laranjeira",
+      "family": "Rutaceae",
+      "genus": "Citrus"
+    },
+    {
+      "scientific_name": "Citrus limon",
+      "common_name": "limoeiro",
+      "family": "Rutaceae",
+      "genus": "Citrus"
+    },
+    {
+      "scientific_name": "Citrus reticulata",
+      "common_name": "tangerineira",
+      "family": "Rutaceae",
+      "genus": "Citrus"
+    },
+    {
+      "scientific_name": "Citrus aurantium",
+      "common_name": "laranja-azeda",
+      "family": "Rutaceae",
+      "genus": "Citrus"
+    },
+    {
+      "scientific_name": "Citrus aurantiifolia",
+      "common_name": "limoeiro-galego",
+      "family": "Rutaceae",
+      "genus": "Citrus"
+    },
+    {
+      "scientific_name": "Citrus paradisi",
+      "common_name": "toranjeira",
+      "family": "Rutaceae",
+      "genus": "Citrus"
+    },
+    {
+      "scientific_name": "Poncirus trifoliata",
+      "common_name": "trifolio",
+      "family": "Rutaceae",
+      "genus": "Poncirus"
+    },
+    {
+      "scientific_name": "Fortunella margarita",
+      "common_name": "kunquateiro",
+      "family": "Rutaceae",
+      "genus": "Fortunella"
+    },
+    {
+      "scientific_name": "Malus domestica",
+      "common_name": "macieira",
+      "family": "Rosaceae",
+      "genus": "Malus"
+    },
+    {
+      "scientific_name": "Pyrus communis",
+      "common_name": "pereira",
+      "family": "Rosaceae",
+      "genus": "Pyrus"
+    },
+    {
+      "scientific_name": "Prunus persica",
+      "common_name": "pessegueiro",
+      "family": "Rosaceae",
+      "genus": "Prunus"
+    },
+    {
+      "scientific_name": "Prunus armeniaca",
+      "common_name": "damasqueiro",
+      "family": "Rosaceae",
+      "genus": "Prunus"
+    },
+    {
+      "scientific_name": "Prunus domestica",
+      "common_name": "ameixeira-europeia",
+      "family": "Rosaceae",
+      "genus": "Prunus"
+    },
+    {
+      "scientific_name": "Prunus salicina",
+      "common_name": "ameixeira-japonesa",
+      "family": "Rosaceae",
+      "genus": "Prunus"
+    },
+    {
+      "scientific_name": "Prunus avium",
+      "common_name": "cerejeira",
+      "family": "Rosaceae",
+      "genus": "Prunus"
+    },
+    {
+      "scientific_name": "Prunus dulcis",
+      "common_name": "amendoeira",
+      "family": "Rosaceae",
+      "genus": "Prunus"
+    },
+    {
+      "scientific_name": "Fragaria x ananassa",
+      "common_name": "morangueiro",
+      "family": "Rosaceae",
+      "genus": "Fragaria"
+    },
+    {
+      "scientific_name": "Rubus idaeus",
+      "common_name": "framboeseira",
+      "family": "Rosaceae",
+      "genus": "Rubus"
+    },
+    {
+      "scientific_name": "Eriobotrya japonica",
+      "common_name": "nespereira",
+      "family": "Rosaceae",
+      "genus": "Eriobotrya"
+    },
+    {
+      "scientific_name": "Mangifera indica",
+      "common_name": "mangueira",
+      "family": "Anacardiaceae",
+      "genus": "Mangifera"
+    },
+    {
+      "scientific_name": "Anacardium occidentale",
+      "common_name": "cajueiro",
+      "family": "Anacardiaceae",
+      "genus": "Anacardium"
+    },
+    {
+      "scientific_name": "Spondias mombin",
+      "common_name": "cajazeira",
+      "family": "Anacardiaceae",
+      "genus": "Spondias"
+    },
+    {
+      "scientific_name": "Spondias purpurea",
+      "common_name": "siriguela",
+      "family": "Anacardiaceae",
+      "genus": "Spondias"
+    },
+    {
+      "scientific_name": "Psidium guajava",
+      "common_name": "goiabeira",
+      "family": "Myrtaceae",
+      "genus": "Psidium"
+    },
+    {
+      "scientific_name": "Eugenia uniflora",
+      "common_name": "pitangueira",
+      "family": "Myrtaceae",
+      "genus": "Eugenia"
+    },
+    {
+      "scientific_name": "Plinia cauliflora",
+      "common_name": "jabuticabeira",
+      "family": "Myrtaceae",
+      "genus": "Plinia"
+    },
+    {
+      "scientific_name": "Syzygium jambos",
+      "common_name": "jambeiro",
+      "family": "Myrtaceae",
+      "genus": "Syzygium"
+    },
+    {
+      "scientific_name": "Eucalyptus grandis",
+      "common_name": "eucalipto",
+      "family": "Myrtaceae",
+      "genus": "Eucalyptus"
+    },
+    {
+      "scientific_name": "Vitis vinifera",
+      "common_name": "videira-europeia",
+      "family": "Vitaceae",
+      "genus": "Vitis"
+    },
+    {
+      "scientific_name": "Vitis labrusca",
+      "common_name": "videira-americana",
+      "family": "Vitaceae",
+      "genus": "Vitis"
+    },
+    {
+      "scientific_name": "Solanum lycopersicum",
+      "common_name": "tomateiro",
+      "family": "Solanaceae",
+      "genus": "Solanum"
+    },
+    {
+      "scientific_name": "Solanum tuberosum",
+      "common_name": "batateira",
+      "family": "Solanaceae",
+      "genus": "Solanum"
+    },
+    {
+      "scientific_name": "Solanum melongena",
+      "common_name": "berinjeleira",
+      "family": "Solanaceae",
+      "genus": "Solanum"
+    },
+    {
+      "scientific_name": "Capsicum annuum",
+      "common_name": "pimenteira",
+      "family": "Solanaceae",
+      "genus": "Capsicum"
+    },
+    {
+      "scientific_name": "Artocarpus heterophyllus",
+      "common_name": "jaqueira",
+      "family": "Moraceae",
+      "genus": "Artocarpus"
+    },
+    {
+      "scientific_name": "Morus nigra",
+      "common_name": "amoreira-preta",
+      "family": "Moraceae",
+      "genus": "Morus"
+    },
+    {
+      "scientific_name": "Ficus carica",
+      "common_name": "figueira",
+      "family": "Moraceae",
+      "genus": "Ficus"
+    },
+    {
+      "scientific_name": "Persea americana",
+      "common_name": "abacateiro",
+      "family": "Lauraceae",
+      "genus": "Persea"
+    },
+    {
+      "scientific_name": "Coffea arabica",
+      "common_name": "cafeeiro-arabica",
+      "family": "Rubiaceae",
+      "genus": "Coffea"
+    },
+    {
+      "scientific_name": "Coffea canephora",
+      "common_name": "cafeeiro-robusta",
+      "family": "Rubiaceae",
+      "genus": "Coffea"
+    },
+    {
+      "scientific_name": "Theobroma cacao",
+      "common_name": "cacaueiro",
+      "family": "Malvaceae",
+      "genus": "Theobroma"
+    },
+    {
+      "scientific_name": "Theobroma grandiflorum",
+      "common_name": "cupuacuzeiro",
+      "family": "Malvaceae",
+      "genus": "Theobroma"
+    },
+    {
+      "scientific_name": "Passiflora edulis",
+      "common_name": "maracujazeiro-azedo",
+      "family": "Passifloraceae",
+      "genus": "Passiflora"
+    },
+    {
+      "scientific_name": "Passiflora alata",
+      "common_name": "maracuja-doce",
+      "family": "Passifloraceae",
+      "genus": "Passiflora"
+    },
+    {
+      "scientific_name": "Passiflora nitida",
+      "common_name": "maracuja-suspiro",
+      "family": "Passifloraceae",
+      "genus": "Passiflora"
+    },
+    {
+      "scientific_name": "Hevea brasiliensis",
+      "common_name": "seringueira",
+      "family": "Euphorbiaceae",
+      "genus": "Hevea"
+    },
+    {
+      "scientific_name": "Diospyros kaki",
+      "common_name": "caquizeiro",
+      "family": "Ebenaceae",
+      "genus": "Diospyros"
+    },
+    {
+      "scientific_name": "Diospyros virginiana",
+      "common_name": "caqui-americano",
+      "family": "Ebenaceae",
+      "genus": "Diospyros"
+    },
+    {
+      "scientific_name": "Olea europaea",
+      "common_name": "oliveira",
+      "family": "Oleaceae",
+      "genus": "Olea"
+    },
+    {
+      "scientific_name": "Punica granatum",
+      "common_name": "romazeira",
+      "family": "Lythraceae",
+      "genus": "Punica"
+    },
+    {
+      "scientific_name": "Averrhoa carambola",
+      "common_name": "caramboleira",
+      "family": "Oxalidaceae",
+      "genus": "Averrhoa"
+    },
+    {
+      "scientific_name": "Averrhoa bilimbi",
+      "common_name": "bilimbizeiro",
+      "family": "Oxalidaceae",
+      "genus": "Averrhoa"
+    },
+    {
+      "scientific_name": "Annona muricata",
+      "common_name": "gravioleira",
+      "family": "Annonaceae",
+      "genus": "Annona"
+    },
+    {
+      "scientific_name": "Annona squamosa",
+      "common_name": "pinheira",
+      "family": "Annonaceae",
+      "genus": "Annona"
+    },
+    {
+      "scientific_name": "Cucurbita moschata",
+      "common_name": "aboboreira",
+      "family": "Cucurbitaceae",
+      "genus": "Cucurbita"
+    },
+    {
+      "scientific_name": "Citrullus lanatus",
+      "common_name": "melancieira",
+      "family": "Cucurbitaceae",
+      "genus": "Citrullus"
+    },
+    {
+      "scientific_name": "Cucumis melo",
+      "common_name": "meloeiro",
+      "family": "Cucurbitaceae",
+      "genus": "Cucumis"
+    },
+    {
+      "scientific_name": "Cucumis sativus",
+      "common_name": "pepineiro",
+      "family": "Cucurbitaceae",
+      "genus": "Cucumis"
+    },
+    {
+      "scientific_name": "Paullinia cupana",
+      "common_name": "guaranazeiro",
+      "family": "Sapindaceae",
+      "genus": "Paullinia"
+    },
+    {
+      "scientific_name": "Litchi chinensis",
+      "common_name": "lichieira",
+      "family": "Sapindaceae",
+      "genus": "Litchi"
+    },
+    {
+      "scientific_name": "Nephelium lappaceum",
+      "common_name": "rambutan",
+      "family": "Sapindaceae",
+      "genus": "Nephelium"
+    },
+    {
+      "scientific_name": "Euterpe oleracea",
+      "common_name": "acaizeiro",
+      "family": "Arecaceae",
+      "genus": "Euterpe"
+    },
+    {
+      "scientific_name": "Cocos nucifera",
+      "common_name": "coqueiro",
+      "family": "Arecaceae",
+      "genus": "Cocos"
+    },
+    {
+      "scientific_name": "Ilex paraguariensis",
+      "common_name": "erva-mate",
+      "family": "Aquifoliaceae",
+      "genus": "Ilex"
+    },
+    {
+      "scientific_name": "Camellia sinensis",
+      "common_name": "cha",
+      "family": "Theaceae",
+      "genus": "Camellia"
+    },
+    {
+      "scientific_name": "Camellia japonica",
+      "common_name": "camelia-ornamental",
+      "family": "Theaceae",
+      "genus": "Camellia"
+    },
+    {
+      "scientific_name": "Actinidia deliciosa",
+      "common_name": "kiwizeiro",
+      "family": "Actinidiaceae",
+      "genus": "Actinidia"
+    },
+    {
+      "scientific_name": "Cucurbita maxima",
+      "common_name": "abóbora-moranga",
+      "family": "Cucurbitaceae",
+      "genus": "Cucurbita"
+    },
+    {
+      "scientific_name": "Lagenaria siceraria",
+      "common_name": "cabaça",
+      "family": "Cucurbitaceae",
+      "genus": "Lagenaria"
+    },
+    {
+      "scientific_name": "Luffa cylindrica",
+      "common_name": "bucha",
+      "family": "Cucurbitaceae",
+      "genus": "Luffa"
+    },
+    {
+      "scientific_name": "Benincasa hispida",
+      "common_name": "abóbora-d'água",
+      "family": "Cucurbitaceae",
+      "genus": "Benincasa"
+    },
+    {
+      "scientific_name": "Solanum aethiopicum",
+      "common_name": "jiló",
+      "family": "Solanaceae",
+      "genus": "Solanum"
+    },
+    {
+      "scientific_name": "Solanum lycocarpum",
+      "common_name": "lobeira",
+      "family": "Solanaceae",
+      "genus": "Solanum"
+    },
+    {
+      "scientific_name": "Solanum stramonifolium",
+      "family": "Solanaceae",
+      "genus": "Solanum"
+    },
+    {
+      "scientific_name": "Cydonia oblonga",
+      "common_name": "marmeleiro",
+      "family": "Rosaceae",
+      "genus": "Cydonia"
+    },
+    {
+      "scientific_name": "Citrus reshni",
+      "common_name": "tangerineira Cleópatra",
+      "family": "Rutaceae",
+      "genus": "Citrus"
+    },
+    {
+      "scientific_name": "Citrus volkameriana",
+      "common_name": "limoeiro Volkameriano",
+      "family": "Rutaceae",
+      "genus": "Citrus"
+    }
+  ]
+}

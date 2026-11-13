@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enxert.IA</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">Enxert<span>.IA</span></a>
+  <nav class="topnav">
+    <a href="compatibilidade.html">Consultar</a>
+    <a href="recomendar.html">Recomendar</a>
+    <a href="plantas.html">Plantas</a>
+    <a href="banco.html">Banco</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="/docs">API</a>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="hero">
+    <p class="eyebrow">Compatibilidade de enxertia</p>
+    <h1>Antes de enxertar, saiba se as duas plantas combinam.</h1>
+    <p class="subtitle">O Enxert.IA responde com um indice e diz de onde ele veio: um registro do banco, o modelo de aprendizado de maquina ou as regras de parentesco. Quando ha estudos sobre combinacoes parecidas, eles aparecem junto, com fonte.</p>
+  </section>
+
+  <div class="grid-cards">
+    <a class="card card--link card--wide" href="catalogo.html">
+      <div class="card__title">Catálogo Enxert.DB</div>
+      <p class="card__desc">Todas as combinações do banco da equipe, com taxa de pegamento, método e fonte, incluindo os registros novos tirados de estudos da Embrapa e de revistas científicas.</p>
+    </a>
+
+    <a class="card card--link" href="compatibilidade.html">
+      <div class="card__title">Consultar compatibilidade</div>
+      <p class="card__desc">Um porta-enxerto e uma copa: indice, justificativa e o que a literatura registra.</p>
+    </a>
+
+    <a class="card card--link" href="recomendar.html">
+      <div class="card__title">Recomendar combinacoes</div>
+      <p class="card__desc">Escolha uma especie e veja o ranking das melhores combinacoes, ou compare candidatas entre si.</p>
+    </a>
+
+    <a class="card card--link" href="banco.html">
+      <div class="card__title">Banco de combinacoes</div>
+      <p class="card__desc">Registros com tipo de evidencia e fonte, e as evidencias extraidas de estudos abertos.</p>
+    </a>
+
+    <a class="card card--link" href="/docs">
+      <div class="card__title">Documentacao da API</div>
+      <p class="card__desc">Teste todos os endpoints pelo navegador (Swagger).</p>
+    </a>
+  </div>
+
+  <div class="status-line" id="status-line">verificando servidor...</div>
+</main>
+
+<script>
+const status = document.getElementById('status-line');
+status.textContent = 'verificando servidor e API da GBIF (pode levar alguns segundos)...';
+
+function item(texto, classe) {
+  const s = document.createElement('span');
+  s.className = `status-item ${classe || ''}`;
+  s.textContent = texto;
+  return s;
+}
+
+fetch('/status').then(r => r.json()).then(data => {
+  status.textContent = '';
+  status.appendChild(item('servidor ok', 'ok'));
+  status.appendChild(item(`${data.especies_no_banco} especies no banco local`));
+  status.appendChild(item(`${data.combinacoes_no_banco ?? 0} combinacoes registradas`));
+  status.appendChild(item(`${data.evidencias_literatura ?? 0} evidencias da literatura`));
+  if (data.catalogo_enxert_db) status.appendChild(item(`Enxert.DB: ${data.catalogo_enxert_db.combinacoes} combinacoes`, 'ok'));
+  status.appendChild(data.gbif_respondendo_agora
+    ? item('GBIF respondendo agora', 'ok')
+    : item('GBIF indisponivel agora (usando banco local)', 'fail'));
+  status.appendChild(data.modelo_ml_disponivel
+    ? item(`modelo de ML carregado (${data.modelo_ml_metadados?.n_amostras ?? '?'} amostras)`, 'ok')
+    : item('modelo de ML nao treinado (rode: python train_model.py)', 'fail'));
+  if (!data.gbif_respondendo_agora && data.gbif_erro) {
+    const motivo = document.createElement('small');
+    motivo.className = 'status-motivo';
+    motivo.textContent = `motivo da falha da GBIF: ${data.gbif_erro}`;
+    status.appendChild(motivo);
+  }
+}).catch(() => {
+  status.textContent = '';
+  status.appendChild(item('nao foi possivel falar com o servidor', 'fail'));
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recomendar combinacoes -- Enxert.IA</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">Enxert<span>.IA</span></a>
+  <nav class="topnav">
+    <a href="compatibilidade.html">Consultar</a>
+    <a href="recomendar.html" aria-current="page">Recomendar</a>
+    <a href="plantas.html">Plantas</a>
+    <a href="banco.html">Banco</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="/docs">API</a>
+  </nav>
+</header>
+
+<main class="page">
+  <p class="eyebrow">Ranking</p>
+  <h1>Recomendar combinacoes</h1>
+  <p class="subtitle">Escolha uma especie e veja as melhores combinacoes de enxertia disponiveis no banco local, rankeadas por compatibilidade taxonomica.</p>
+
+  <section class="panel">
+  <div class="field">
+    <label for="especie-input">Especie de referencia</label>
+    <div class="picker" id="picker-especie">
+      <input class="picker__input" id="especie-input" type="text" autocomplete="off" placeholder="Nome popular ou cientifico (ex: laranjeira, Prunus persica)">
+      <div class="picker__panel" id="panel-especie" hidden></div>
+    </div>
+    <input class="picker__input picker__input--free" id="especie-livre" type="text" autocomplete="off" placeholder="ou outro nome cientifico, buscado na GBIF">
+    <p class="hint">A lista acima tem so as especies do banco local. Qualquer outro nome cientifico digitado aqui e buscado na GBIF.</p>
+  </div>
+
+  <div class="field">
+    <label for="candidatas-input">Candidatas especificas (opcional)</label>
+    <textarea class="picker__input" id="candidatas-input" rows="2" placeholder="ex: Citrus limon, Poncirus trifoliata, Prunus persica"></textarea>
+    <p class="hint">Deixe em branco para rankear contra todo o banco de especies. Preencha com nomes cientificos separados por virgula para comparar apenas essas opcoes especificas entre si.</p>
+  </div>
+
+  <div class="acoes"><button class="btn" id="btn-recomendar" disabled>Ver recomendacoes</button></div>
+  </section>
+
+  <div id="recomendacoes-area"></div>
+  <div class="error-msg" id="error-msg" hidden></div>
+</main>
+
+<script src="picker.js"></script>
+<script src="recomendar.js"></script>
+</body>
+</html>

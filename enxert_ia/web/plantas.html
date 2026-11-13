@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plantas -- Enxert.IA</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">Enxert<span>.IA</span></a>
+  <nav class="topnav">
+    <a href="compatibilidade.html">Consultar</a>
+    <a href="recomendar.html">Recomendar</a>
+    <a href="plantas.html" aria-current="page">Plantas</a>
+    <a href="banco.html">Banco</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="/docs">API</a>
+  </nav>
+</header>
+
+<main class="page page--wide">
+  <p class="eyebrow">Espécies</p>
+  <h1>Plantas</h1>
+  <p class="subtitle">As espécies que aparecem nos seletores de consulta e recomendação. Além das que vêm com o projeto, você pode cadastrar as suas: elas passam a ser escolhidas como qualquer outra e funcionam mesmo sem internet.</p>
+
+  <div class="plantas-layout">
+    <section class="card card--form-lado">
+      <h2>Adicionar planta</h2>
+      <div class="field">
+        <label for="f-nome">Nome científico</label>
+        <input class="picker__input" id="f-nome" type="text" autocomplete="off" placeholder="ex: Annona cherimola">
+        <p class="hint">Gênero e espécie. A cultivar pode ir entre parênteses: Citrus sinensis (Pera Rio).</p>
+      </div>
+      <div class="field">
+        <label for="f-popular">Nome popular (opcional)</label>
+        <input class="picker__input" id="f-popular" type="text" autocomplete="off" placeholder="ex: cherimólia">
+      </div>
+      <div class="par par--2">
+        <div class="field">
+          <label for="f-familia">Família</label>
+          <input class="picker__input" id="f-familia" type="text" autocomplete="off" placeholder="ex: Annonaceae">
+        </div>
+        <div class="field">
+          <label for="f-genero">Gênero</label>
+          <input class="picker__input" id="f-genero" type="text" autocomplete="off" placeholder="ex: Annona">
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-obs">Observações (opcional)</label>
+        <textarea class="picker__input" id="f-obs" rows="2" placeholder="ex: porta-enxerto usado na região de Pompeia"></textarea>
+      </div>
+      <div class="acoes">
+        <button class="btn btn--ghost" id="btn-gbif" type="button">Preencher pela GBIF</button>
+        <button class="btn" id="btn-salvar" type="button">Adicionar</button>
+      </div>
+      <p class="hint" id="msg-gbif" hidden></p>
+      <div class="error-msg" id="msg-erro" hidden></div>
+      <div class="ok-msg" id="msg-ok" hidden></div>
+    </section>
+
+    <section>
+      <div class="filtros filtros--3">
+        <div class="field">
+          <label for="busca">Buscar</label>
+          <input class="picker__input" id="busca" type="search" autocomplete="off" placeholder="nome, família ou gênero">
+        </div>
+        <div class="field">
+          <label for="filtro-origem">Origem</label>
+          <select class="picker__input" id="filtro-origem">
+            <option value="">Todas</option>
+            <option value="usuario">Cadastradas por você</option>
+            <option value="base">Do projeto</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="filtro-familia">Família</label>
+          <select class="picker__input" id="filtro-familia"><option value="">Todas</option></select>
+        </div>
+      </div>
+      <p class="hint" id="contagem"></p>
+      <div class="tabela-wrap" id="tabela"></div>
+    </section>
+  </div>
+</main>
+
+<script src="picker.js"></script>
+<script src="plantas.js"></script>
+</body>
+</html>

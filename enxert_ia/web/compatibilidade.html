@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consultar compatibilidade -- Enxert.IA</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">Enxert<span>.IA</span></a>
+  <nav class="topnav">
+    <a href="compatibilidade.html" aria-current="page">Consultar</a>
+    <a href="recomendar.html">Recomendar</a>
+    <a href="plantas.html">Plantas</a>
+    <a href="banco.html">Banco</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="/docs">API</a>
+  </nav>
+</header>
+
+<main class="page">
+  <p class="eyebrow">Consulta par a par</p>
+  <h1>Consultar compatibilidade</h1>
+  <p class="subtitle">Escolha o porta-enxerto e a copa. O resultado diz o indice, de onde ele veio (banco, modelo ou regras) e o que a literatura registra sobre combinacoes parecidas.</p>
+
+  <section class="panel">
+    <div class="par">
+      <div class="field">
+        <label for="porta-input">Porta-enxerto</label>
+        <div class="picker" id="picker-porta">
+          <input class="picker__input" id="porta-input" type="text" autocomplete="off"
+                 placeholder="Nome popular ou cientifico (ex: limoeiro, Citrus limon)">
+          <div class="picker__panel" id="panel-porta" hidden></div>
+        </div>
+        <input class="picker__input picker__input--free" id="porta-livre" type="text" autocomplete="off"
+               placeholder="ou outro nome cientifico, buscado na GBIF">
+      </div>
+
+      <button class="btn btn--ghost btn--icon" id="btn-trocar" type="button" title="Trocar porta-enxerto e copa" aria-label="Trocar porta-enxerto e copa">&#8646;</button>
+
+      <div class="field">
+        <label for="enxerto-input">Copa (enxerto)</label>
+        <div class="picker" id="picker-enxerto">
+          <input class="picker__input" id="enxerto-input" type="text" autocomplete="off"
+                 placeholder="Nome popular ou cientifico (ex: laranjeira)">
+          <div class="picker__panel" id="panel-enxerto" hidden></div>
+        </div>
+        <input class="picker__input picker__input--free" id="enxerto-livre" type="text" autocomplete="off"
+               placeholder="ou outro nome cientifico, buscado na GBIF">
+      </div>
+    </div>
+
+    <div class="acoes">
+      <button class="btn" id="btn-consultar" disabled>Consultar compatibilidade</button>
+      <span class="hint" id="dica-atalho">Dica: Enter escolhe a primeira sugestao.</span>
+    </div>
+  </section>
+
+  <div class="error-msg" id="error-msg" hidden></div>
+
+  <section class="result" id="result" hidden>
+    <div class="result__topo">
+      <div>
+        <div class="result__par" id="result-par"></div>
+        <div class="result__score" id="result-score"></div>
+      </div>
+      <div class="result__lado">
+        <span class="pill" id="result-level"></span>
+        <span class="pill pill--quiet" id="result-source"></span>
+      </div>
+    </div>
+    <p class="result__just" id="result-justification"></p>
+    <div class="result__rodape">
+      <div class="result__meta" id="result-meta"></div>
+      <button class="btn btn--ghost btn--mini" id="btn-copiar" type="button">Copiar link desta consulta</button>
+    </div>
+  </section>
+
+  <section class="lit" id="literatura" hidden>
+    <h2 id="lit-titulo"></h2>
+    <p class="hint" id="lit-aviso"></p>
+    <ul class="lit__lista" id="lit-lista"></ul>
+    <a class="link-mais" id="lit-mais" href="banco.html" hidden>Ver todos os registros no Banco de combinacoes &rarr;</a>
+  </section>
+</main>
+
+<script src="picker.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
